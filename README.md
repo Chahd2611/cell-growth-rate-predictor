@@ -9,6 +9,15 @@ This project predicts specific cell-culture growth rate from temperature, pH, gl
 - Evaluate cross-validation and held-out performance
 - Quantify feature importance by permutation
 - Visualize modeled feature-response trends
+
+## Environment
+
+- Python 3.14.7
+- matplotlib 3.11.0
+- numpy 2.5.2
+- pandas 3.0.5
+- scikit-learn 1.9.0
+
 ## Code Design
 
 ### Loading and validating the dataset
@@ -39,13 +48,6 @@ The program saves the model comparison and feature-importance tables in the `tab
 ### Reproducibility and scope
 
 Fixed random seeds are used for the data split, cross-validation folds, random forest, and permutation analysis. This makes repeated runs comparable and helps readers reproduce the reported results. The partial-dependence curves and feature-importance ranking describe the fitted model’s patterns in this simulated dataset. They should be interpreted as exploratory evidence: they do not demonstrate biological cause and effect, and the model may be unreliable for culture conditions outside the data’s observed range.
-## Environment
-
-- Python 3.14.7
-- matplotlib 3.11.0
-- numpy 2.5.2
-- pandas 3.0.5
-- scikit-learn 1.9.0
 
 ## Analysis
 
